@@ -1,7 +1,5 @@
 ESX = exports['es_extended']:getSharedObject()
 
-local disponibles = 0
-
 RegisterCommand("pdispo", function(source, args)
     local xPlayer = ESX.GetPlayerFromId(source)
     local job = xPlayer.job.name
