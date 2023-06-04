@@ -1,6 +1,6 @@
 ESX = exports['es_extended']:getSharedObject()
 
-RegisterCommand("pdispo", function(source, args)
+RegisterCommand(Config.Command, function(source, args)
     local xPlayer = ESX.GetPlayerFromId(source)
     local job = xPlayer.job.name
 
