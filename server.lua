@@ -15,6 +15,8 @@ RegisterCommand(Config.Command, function(source, args)
         end
 
         TriggerClientEvent("pdispo:message", -1, message)
+    else        
+        ESX.ShowNotification(source, "¡No eres policia!")
     end
 end, false)
 
